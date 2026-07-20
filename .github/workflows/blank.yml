@@ -23,13 +23,20 @@ jobs:
           node-version: 20
       
       # changes to the reactCICD directory, installs dependencies, runs tests, and builds the project
-      - run: npm install
+      - name: Dependency Intallation 
+        run: npm install
         working-directory: ./reactCICD
 
-      - run: npm test
+      - name: Run Tests
+        run: npm test
         working-directory: ./reactCICD
 
-      - run: npm run build
+      - name: Lint Project
+        run: npx expo lint
+        working-directory: ./reactCICD
+
+      - name: Build Project
+        run: npm run build
         working-directory: ./reactCICD
 
 
