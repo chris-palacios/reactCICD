@@ -1,9 +1,11 @@
-name: CI Pipelin
+name: CI Pipeline
 
 on: 
   push:
       branches:
         - main
+
+  workflow_dispatch:
 
 jobs:
   
@@ -13,17 +15,17 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - uses: actions/setup-node@v4
-      with: 
-        node-version: 20
+      - uses: actions/setup-node@v4
+        with: 
+          node-version: 20
 
-    -run: npm intstall
+      - run: npm install
 
-    -run: npm test
+      - run: npm test
 
-    -run: npm run build
+      - run: npm run build
 
 
 
