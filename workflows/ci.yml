@@ -20,12 +20,18 @@ jobs:
       - uses: actions/setup-node@v4
         with: 
           node-version: 20
-
+      
+      # changes to the reactCICD directory, installs dependencies, runs tests, and builds the project
       - run: npm install
+        working-directory: ./reactCICD
 
       - run: npm test
+        working-directory: ./reactCICD
 
       - run: npm run build
+        working-directory: ./reactCICD
+
+        
 
 
 

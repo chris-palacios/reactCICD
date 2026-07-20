@@ -1,0 +1,18 @@
+{
+  "name": "reactcicd",
+  "version": "1.0.0",
+  "description": "Example of a working React app with CICD integration",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-palacios/reactCICD.git"
+  },
+  "author": "Christian Palacios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-palacios/reactCICD/issues"
+  },
+  "homepage": "https://github.com/chris-palacios/reactCICD#readme"
+}
