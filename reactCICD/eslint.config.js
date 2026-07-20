@@ -12,7 +12,6 @@ module.exports = defineConfig([
   { files: ['**/*.ts', '**/*.tsx'], plugins: {js}, extends: ["js/recommended"] },
     
   { rules: {
-      "no-use-before-define": ["error", { "variables": true }],
     }
   }
 ]);
